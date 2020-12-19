@@ -4,4 +4,4 @@
 ![](bike.png)
 ![](truck.png)
 ![](find.png)
-![](find result.png)
+![](find-result.png)
