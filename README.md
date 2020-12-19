@@ -1,3 +1,7 @@
 # miniproject-detai7
 #group 7.1
-![](car.png)
+![Car](car.png)
+![](bike.png)
+![](truck.png)
+![](find.png)
+![](find result.png)
