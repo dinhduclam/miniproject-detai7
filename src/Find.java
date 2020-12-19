@@ -339,7 +339,7 @@ public class Find extends JPanel implements ActionListener {
 				
 				if (k) {
 					rs = st.executeQuery(sql);
-					new showVehicleFound(rs);
+					new ShowVehicleFound(rs);
 				}
 				else {
 					try {
