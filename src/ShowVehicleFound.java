@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 import org.apache.poi.ss.usermodel.CellType;
 
-public class showVehicleFound extends JFrame implements ActionListener{
+public class ShowVehicleFound extends JFrame implements ActionListener{
 	private JScrollPane scrollPane;
 	private JPanel pnSouth, pnCenter, pnExportAndClose;
 	private JButton export, close;
@@ -34,7 +34,7 @@ public class showVehicleFound extends JFrame implements ActionListener{
 	private DefaultTableModel model;
 	ResultSet rs;
 	
-	public showVehicleFound(ResultSet rs) {
+	public ShowVehicleFound(ResultSet rs) {
 		// TODO Auto-generated constructor stub
 		this.rs = rs;
 		setWindow();
