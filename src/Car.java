@@ -31,22 +31,15 @@ import javax.swing.border.MatteBorder;
 import javax.swing.table.DefaultTableModel;
 
 public class Car extends JPanel implements ActionListener {
-	private JTextField carMake;
-	private JTextField carManufacturingYear;
-	private JTextField carPrice;
-	private JTextField carColor;
-	private JTextField carNumberOfSeats;
-	private JTextField carTypeOfEngine;
-	private JTable carTable;
 	private JPanel pnSouth, carButtonList, carMain, carTitle, carInfo, pnExport;
-	private JScrollPane scrollPane;
+	private JTextField carMake, carManufacturingYear, carPrice, carColor, carNumberOfSeats, carTypeOfEngine;
 	private JButton add, update, clear, delete, export;
 	private JLabel status;
+	private JScrollPane scrollPane;
+	private JTable carTable;
 	private DefaultTableModel carModel;
-	private Object[] carCol = { "ID", "Make", "Manufacturing Year", "Price", "Color", "Number of seats",
-			"Type of engine" };
-	private Object[] carGetRs = { "class_id", "make", "manufacturing_year", "price", "color", "number_of_seats",
-			"type_of_engine" };
+	private Object[] carCol = { "ID", "Make", "Manufacturing Year", "Price", "Color", "Number of seats", "Type of engine" };
+	private Object[] carGetRs = { "class_id", "make", "manufacturing_year", "price", "color", "number_of_seats", "type_of_engine" };
 	private Object[] carRow = new Object[7];
 	private Connection con;
 	private int carId = 0;

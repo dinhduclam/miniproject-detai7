@@ -32,7 +32,7 @@ public class ShowVehicleFound extends JFrame implements ActionListener{
 	private Object[] getRs = {"class_id", "type", "make", "manufacturing_year", "price", "color", "number_of_seats", "type_of_engine", "power", "truck_load"}; 
 	private Object[] row = new Object[10];
 	private DefaultTableModel model;
-	ResultSet rs;
+	private ResultSet rs;
 	
 	public ShowVehicleFound(ResultSet rs) {
 		// TODO Auto-generated constructor stub

@@ -13,8 +13,8 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 public class Vehicle extends JFrame implements ActionListener {
-	JButton btCar, btBike, btTruck, btFind;
-	JPanel pnChoose, pnCenter, cardVehicle, car, bike, truck, find;
+	private JButton btCar, btBike, btTruck, btFind;
+	private JPanel pnChoose, pnCenter, cardVehicle, car, bike, truck, find;
 	Vehicle() {
 		// TODO Auto-generated constructor stub
 		window();
@@ -38,7 +38,7 @@ public class Vehicle extends JFrame implements ActionListener {
 		set();
 	}
 	
-	void window() {
+	private void window() {
 		pnChoose = new JPanel();
 		pnChoose.setPreferredSize(new Dimension(130, 10));
 		pnChoose.setBackground(SystemColor.activeCaption);

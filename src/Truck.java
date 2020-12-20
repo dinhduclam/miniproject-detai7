@@ -31,16 +31,12 @@ import javax.swing.border.MatteBorder;
 import javax.swing.table.DefaultTableModel;
 
 public class Truck extends JPanel implements ActionListener {
-	private JTextField truckMake;
-	private JTextField truckManufacturingYear;
-	private JTextField truckPrice;
-	private JTextField truckColor;
-	private JTextField truckLoad;
-	private JTable truckTable;
+	private JTextField truckMake, truckManufacturingYear, truckPrice, truckColor, truckLoad;
 	private JPanel pnSouth, truckButtonList, truckMain, truckTitle, truckInfo, pnExport;
-	private JScrollPane scrollPane;
 	private JButton add, update, clear, delete, export;
 	private JLabel status;
+	private JScrollPane scrollPane;
+	private JTable truckTable;
 	private DefaultTableModel truckModel;
 	private Object[] truckCol = {"ID", "Make", "Manufacturing Year", "Price", "Color", "Load" };
 	private Object[] truckGetRs = { "class_id", "make", "manufacturing_year", "price", "color", "truck_load"};

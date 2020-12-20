@@ -24,13 +24,13 @@ import javax.swing.border.MatteBorder;
 
 public class Find extends JPanel implements ActionListener {
 
-	JPanel pnSouth, pnNorth, pnCenter, pnGetInfo, pnClearAndFind;
-	JButton clear, find;
-	JTextField make, manufacturingYear, price, color, typeOfEngine, numberOfSeats, power, load;
-	JLabel status;
-	Connection con;
+	private JPanel pnSouth, pnNorth, pnCenter, pnGetInfo, pnClearAndFind;
+	private JButton clear, find;
+	private JTextField make, manufacturingYear, price, color, typeOfEngine, numberOfSeats, power, load;
+	private JLabel status;
+	private Connection con;
 
-	public Find() {
+	Find() {
 		window();
 	}
 
@@ -223,7 +223,7 @@ public class Find extends JPanel implements ActionListener {
 		});
 	}
 
-	void connect() {
+	private void connect() {
 		// TODO Auto-generated method stub
 		String url = "jdbc:mysql://localhost:3306/vehicle";
 		String username = "root";
