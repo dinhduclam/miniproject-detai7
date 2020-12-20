@@ -131,9 +131,5 @@ public class Vehicle extends JFrame implements ActionListener {
 		setLocationRelativeTo(null);
 		setTitle("Vehicle Management");
 	}
-	
-	public static void main(String[] args) {
-		new Vehicle();
-	}
 		
 }
