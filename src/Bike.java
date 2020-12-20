@@ -277,6 +277,7 @@ public class Bike extends JPanel implements ActionListener {
 						bikeTable.setValueAt(bikeColor.getText(), i, 4);
 						bikeTable.setValueAt(bikePower.getText(), i, 5);
 						clear();
+						bikeTable.removeRowSelectionInterval(i, i);
 						status.setText("Update sucessful!");
 					} catch (IllegalArgumentException e) {
 						status.setText("Wrong data type!");

@@ -277,6 +277,7 @@ public class Truck extends JPanel implements ActionListener {
 						truckTable.setValueAt(truckColor.getText(), i, 4);
 						truckTable.setValueAt(truckLoad.getText(), i, 5);
 						clear();
+						truckTable.removeRowSelectionInterval(i, i);
 						status.setText("Update sucessful!");
 					} catch (IllegalArgumentException e) {
 						status.setText("Wrong data type!");

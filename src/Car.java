@@ -297,6 +297,7 @@ public class Car extends JPanel implements ActionListener {
 						carTable.setValueAt(carNumberOfSeats.getText(), i, 5);
 						carTable.setValueAt(carTypeOfEngine.getText(), i, 6);
 						clear();
+						carTable.removeRowSelectionInterval(i, i);
 						status.setText("Update sucessful!");
 					} catch (IllegalArgumentException e) {
 						status.setText("Wrong data type!");
