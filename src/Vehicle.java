@@ -12,9 +12,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+import org.apache.log4j.Layout;
+
 public class Vehicle extends JFrame implements ActionListener {
 	private JButton btCar, btBike, btTruck, btFind;
 	private JPanel pnChoose, pnCenter, cardVehicle, car, bike, truck, find;
+	CardLayout card;
 	Vehicle() {
 		// TODO Auto-generated constructor stub
 		window();
@@ -25,14 +28,15 @@ public class Vehicle extends JFrame implements ActionListener {
 		
 		pnCenter = new JPanel();
 		cardVehicle = new JPanel();
-		cardVehicle.setLayout(new CardLayout(0, 0));
-		cardVehicle.add(car);
+		card = new CardLayout(15, 15);
+		cardVehicle.setLayout(card);
+		
+		cardVehicle.add("car", car);
+		cardVehicle.add("bike", bike);
+		cardVehicle.add("truck", truck);
+		cardVehicle.add("find", find);
 		
 		pnCenter.setLayout(new BorderLayout());
-		pnCenter.add(new JPanel(), BorderLayout.NORTH);
-		pnCenter.add(new JPanel(), BorderLayout.SOUTH);
-		pnCenter.add(new JPanel(), BorderLayout.WEST);
-		pnCenter.add(new JPanel(), BorderLayout.EAST);
 		pnCenter.add(cardVehicle, BorderLayout.CENTER);
 		add(pnCenter);
 		set();
@@ -100,29 +104,26 @@ public class Vehicle extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
-		cardVehicle.removeAll();
 		btCar.setBackground(SystemColor.activeCaption);
 		btBike.setBackground(SystemColor.activeCaption);
 		btTruck.setBackground(SystemColor.activeCaption);
 		btFind.setBackground(SystemColor.activeCaption);
 		if (arg0.getSource() == btCar) {
-			cardVehicle.add(car);
+			card.show(cardVehicle, "car");
 			btCar.setBackground(SystemColor.activeCaptionBorder);
 		}
 		else if (arg0.getSource() == btBike) {
-			cardVehicle.add(bike);
+			card.show(cardVehicle, "bike");
 			btBike.setBackground(SystemColor.activeCaptionBorder);
 		}
 		else if (arg0.getSource() == btTruck) {
-			cardVehicle.add(truck);
+			card.show(cardVehicle, "truck");
 			btTruck.setBackground(SystemColor.activeCaptionBorder);
 		}
 		else if (arg0.getSource() == btFind) {
-			cardVehicle.add(find);
+			card.show(cardVehicle, "find");
 			btFind.setBackground(SystemColor.activeCaptionBorder);
 		}
-		cardVehicle.repaint();
-		cardVehicle.revalidate();
 	}
 	
 	private void set() {
