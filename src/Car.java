@@ -314,14 +314,14 @@ public class Car extends JPanel implements ActionListener {
 					int class_id = (int) carTable.getValueAt(i, 0);
 					try {
 						delete(class_id);
+						carModel.removeRow(i);
+						i = carTable.getSelectedRow();
 						status.setText("Delete sucessful!");
 					} catch (SQLException e) {
 						// TODO Auto-generated catch block
 						status.setText("Delete fail!");
 						e.printStackTrace();
 					}
-					carModel.removeRow(i);
-					i = carTable.getSelectedRow();
 				}
 			} else
 				JOptionPane.showMessageDialog(null, "Please Select A Row First");

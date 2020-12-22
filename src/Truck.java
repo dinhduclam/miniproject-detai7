@@ -297,14 +297,14 @@ public class Truck extends JPanel implements ActionListener {
 					int class_id = (int) truckTable.getValueAt(i, 0);
 					try {
 						delete(class_id);
+						truckModel.removeRow(i);
+						i = truckTable.getSelectedRow();
 						status.setText("Delete sucessful!");
 					} catch (SQLException e) {
 						// TODO Auto-generated catch block
 						status.setText("Delete fail!");
 						e.printStackTrace();
 					}
-					truckModel.removeRow(i);
-					i = truckTable.getSelectedRow();
 				}
 			} else
 				JOptionPane.showMessageDialog(null, "Please Select A Row First");
