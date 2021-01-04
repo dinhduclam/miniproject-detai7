@@ -38,7 +38,7 @@ Bước 5: Tại thanh Project Explorer ta thấy xuất hiện project có tên
 
 
 Demo chương trình:
-![Car](car.png)
+![Car](anh demo/car.png)
 ![](bike.png)
 ![](truck.png)
 ![](find.png)
