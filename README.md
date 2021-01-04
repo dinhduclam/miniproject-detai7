@@ -35,6 +35,7 @@ Bước 4: Giải nén file vừa tải về, bật Eclipse
 Bước 5: Tại thanh Project Explorer ta thấy xuất hiện project có tên “miniproject-detai7-master”, chuột phải vào project, chọn Run As sau đó chọn Java Application.
 
  ![](anh_demo/run.png)
+ 
  
 2.	Hướng dẫn sử dụng chương trình.
 
@@ -49,7 +50,7 @@ Bước 5: Tại thanh Project Explorer ta thấy xuất hiện project có tên
 Để tìm kiếm xe, người dùng điền thông tin vào các trường thông tin (có thể để trống) rồi ấn nút Find.
 
 
-Demo chương trình:
+3. Demo chương trình:
 
 ![Car](anh_demo/car.png)
 ![](anh_demo/find.png)
