@@ -5,7 +5,7 @@ Hướng dẫn sử dụng:
 Bước 1: Tải các ứng dụng tạo môi trường. 
 -	Tải JDK phù hợp với hệ điều hành tại trang chủ của Oracle https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html.
 -	Tải và cài đặt Eclipse IDE theo hướng dẫn sau: https://o7planning.org/vi/10379/huong-dan-cai-dat-va-cau-hinh-eclipse
--	Tải và cài đặt XAMPP tại https://www.apachefriends.org/index.html 
+-	Tải và cài đặt XAMPP tại https://www.apachefriends.org/index.html
 Bước 2: Bật XAMPP, sau đó nhấn vào nút Start tại Apache với MySQL. Nếu Apache và MySQL hiện màu xanh như trong hình là thành công
  
 Bước 3: Bật ứng dụng duyệt web (Chrome, Cốc cốc,…), truy cập vào đường dẫn localhost/phpmyadmin
